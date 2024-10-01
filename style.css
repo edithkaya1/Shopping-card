@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin:0;
+    padding:0;   
+}
+
+:root {
+    --hoovercolor: #FCC7D1;
+    --textheader: #EDEAF5;
+    --textheader1: #C4849D;
+    --textheader2: #B39CC7;
+}
+
+body {
+   background-color: #EDEAF5;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.header {
+    font-size: 3rem;
+    font-weight: bold;
+    justify-content: center;
+    text-align:center;
+    letter-spacing: 0.2rem;
+    color: var(--textheader);
+    background-color:var(--textheader1);
+    width: 50%;
+    height: auto;
+    padding: 2rem;
+    margin-inline: 340px;
+    margin-top: 50px;
+    text-shadow: 7px 7px 15px #746d75;
+    animation: zoomIn;
+    animation-duration: 5s;
+    --animate-delay: 0.9s;
+}
+
+.sub-header {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--textheader2);
+    background-color: #B39CC7;
+    color: white;
+    text-shadow: 7px 7px 15px #353235;
+}
+
+.soc-icons a {
+    font-size: 1.5rem;
+    color: white;
+    margin: 1rem;
+}
+
+.card-img {
+    width: 350px;
+    height: 250px;
+    justify-content: center;
+    margin-inline: auto;
+}
+
+.image {
+    width: 70px;
+    height: auto;
+}
+
+.text {
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #683142;  
+}
+
+.figure-img {
+    width: 500px;
+    height: 300px;  
+}
+
+.footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.card-title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #B39CC7; 
+}
+
+.card-header {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #b40129;
+}
+
+.card-text, .card-header {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.shop {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
+    /* border: 1px solid black; */
+}
+
+.shop-img {
+    width: 50px;
+    height: auto; 
+}
+
+.navbar-nav {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.navbar-nav a:hover {
+    background-color: var(--hoovercolor);
+    border-radius: 30%;
+    box-shadow: 5px 5px 10px #a39aa3;
+    transform: scale(1.5);
+    animation: rotateOut;
+    animation-duration: 2s;
+    opacity: 0.5;
+}
+
+#discount, #total, .sum-header {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Mobile phone */
+@media screen and (max-width: 480px)
+ {
+    .navbar-nav a:hover {
+        width: 90px;
+        text-align: center;
+    } 
+
+    .header {
+        font-size: 2.8rem;
+        width: 70%;
+        height: auto;
+        padding: 2rem;
+        margin-inline: 100px;
+    }
+    
+    .sub-header {
+        margin-left: 40px;
+        margin-right: 50px;
+        font-size: 1.3rem;
+    }
+    
+   .footer-links {
+        font-size: 1rem;
+    }
+
+    .footer1 {
+        font-size: 1rem;
+    }
+
+    .footer2 {
+        font-size: 0.8rem;
+    }
+
+    .footer3 {
+        font-size: 0.8rem;
+    }
+
+    .footer4 {
+        font-size: 0.8rem;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 1200px) and (min-width: 481px)
+{
+    .navbar-nav a:hover {
+        width: 90px;
+        text-align: center;
+    }
+
+    .header {
+        font-size: 3rem;
+        width: 80%;
+        height: auto;
+        padding: 2rem;
+        margin-inline: 50px;
+    }
+    
+    .sub-header {
+        margin-left: 60px;
+        margin-right: 120px;
+        font-size: 1.5rem;
+    }
+    
+    .footer-links {
+        font-size: 0.8rem;
+    }
+
+    .footer1 {
+        font-size: 1rem;
+    }
+
+    .footer2 {
+        font-size: 0.8rem;
+    }
+
+    .footer3 {
+        font-size: 0.8rem;
+    }
+
+    .footer4 {
+        font-size: 0.8rem;
+    }
+}
